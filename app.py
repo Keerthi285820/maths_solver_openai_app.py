@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI  # ✅ CORRECT for v1.0.0+
 
 # Load API key from Streamlit secrets
-client = OpenAI(api_key=st.secrets["openai_api_key"])
+client = OpenAI(api_key=st.secrets["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"])
 
 # UI
 st.set_page_config(page_title="Math Solver", page_icon="🧠")
