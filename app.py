@@ -20,7 +20,7 @@ if st.button("Solve"):
         with st.spinner("Solving..."):
             try:
                 response = client.chat.completions.create(
-                    model="gpt-4",
+                    model="gpt-3.5-turbo",
                     messages=[
                         {"role": "system", "content": "You are a helpful math tutor. Give step-by-step solutions using LaTeX where needed."},
                         {"role": "user", "content": question}
